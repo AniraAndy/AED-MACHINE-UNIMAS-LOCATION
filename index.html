@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AED Locator Map</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- 1. The Map Background -->
+  <div id="map-container"></div>
+
+  <!-- 2. Functional Search Bar -->
+  <div class="top-search-bar">
+    <div class="search-input-container">
+      <span class="icon">📍</span>
+      <input type="text" id="search-box" placeholder="Search building or AED...">
+    </div>
+  </div>
+
+  <!-- 3. Dynamic Swipeable AED Cards (Populated by app.js) -->
+  <div class="card-carousel" id="card-container">
+    <!-- Cards will be injected here automatically -->
+  </div>
+
+  <!-- 4. Bottom Navigation Bar -->
+  <div class="bottom-nav">
+    <div class="nav-item" onclick="alert('Menu placeholder')">🗂️</div>
+    <div class="nav-item" onclick="alert('Map overview placeholder')">🗺️</div>
+    <!-- Geolocation Trigger -->
+    <div class="nav-item center-target" id="locate-btn">🎯</div>
+    <div class="nav-item" onclick="alert('Notifications placeholder')">🔔</div>
+    <div class="nav-item" onclick="alert('Profile placeholder')">👤</div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
